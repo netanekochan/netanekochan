@@ -1,0 +1,83 @@
+/* ヘッダー画像 */
+#headerImage img {
+    width: 940px;
+    height: auto;
+}
+
+/* ナビゲーション */
+#topnav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+    margin: 20px 0 30px;
+}
+
+#topnav li a {
+    display: block;
+    text-align: center;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffe4e1;
+    padding: 12px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+#stamp {
+    max-width: 940px;
+    margin: 40px auto;
+}
+
+#stamp h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lead {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.stampCard {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: #fffdfb;
+    border: 2px solid #f8d8d8;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.stampCard img {
+    width: 300px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.stampText {
+    flex: 1;
+}
+
+.stampText h3 {
+    margin-top: 0;
+}
+
+.stampText p {
+    line-height: 2;
+}
+
+.stampButton {
+    display: inline-block;
+    margin-top: 20px;
+    background: #06c755;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 999px;
+}

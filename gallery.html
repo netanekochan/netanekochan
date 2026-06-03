@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ネタねこちゃんの公式HP</title>
+
+<!--CSSリンク-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/gallery.css" rel="stylesheet" type="text/css">
+
+<!--フォント-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+	<!-- ヘッダー画像 -->	
+	<h1><a href="index.html"><img src="image/header.png" width="940px" alt="ネタねこちゃん大集合のヘッダー"/></a></h1>
+		
+	<!--トップナビゲーション始まり-->
+	<ul id="topnav">
+	 <li><a href="index.html">Top page<br>トップページ</a></li>
+	 <li><a href="about.html">What's Neta-Neko chan?<br>ネタねこちゃんって？</a></li>
+	 <li><a href="linestamp.html">LINE stamp<br>LINEスタンプ</a></li>
+	 <li><a href="gallery.html">Gallery<br>ギャラリー</a></li>
+	</ul>
+	<!--トップナビゲーション終わり-->
+	</header>
+	
+	<main>
+  <section id="gallery">
+    <h2>ネタねこギャラリー</h2>
+    <p class="galleryLead">ネタねこちゃんたちの集合絵や日常イラストを展示しています。</p>
+
+    <div class="galleryGrid">
+
+      <div class="galleryItem">
+        <img src="image/gallery1.png" alt="ネタねこ大集合">
+        <h3>ネタねこちゃん大集合</h3>
+        <p>ネタねこちゃんたちが勢ぞろい。</p>
+      </div>
+
+      <div class="galleryItem">
+        <img src="image/gallery2.png" alt="冷蔵庫のネタねこちゃん">
+        <h3>冷蔵庫の住人</h3>
+        <p>気づいたら、他の食品と並んでいました。</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+	
+<!-- フッター始まり -->
+<footer>
+<ul id="footerNav">
+	 <li><a href="index.html">Top page-トップページ</a></li>		
+	 <li><a href="about.html">What's Neta-Neko chan? -ネタねこちゃんって？</a></li>	
+	 <li><a href="linestamp.html">LINE stamp-LINEスタンプ</a></li>	
+	 <li><a href="gallery.html">Gallery-ギャラリー</a></li>
+	 <li><a href="sitemap.html">サイトマップ</a></li>
+	 <li><a href="Disclaimer.html">免責事項</a></li>
+	</ul>
+
+<!-- コピーライト始まり -->
+<p id="copyRight"><small>Copyrigit &copy; 2026- Neta-Neko chan ALL Rights Reserved</small></p>
+</footer>
+	<script>
+const previewImage = document.getElementById('previewImage');
+const nekoImages = document.querySelectorAll('#mainImage img');
+
+nekoImages.forEach(function(img) {
+  img.addEventListener('mouseover', function() {
+    previewImage.src = img.src;
+    previewImage.alt = img.alt + 'の拡大画像';
+  });
+});
+</script>
+
+</body>
+</html>
